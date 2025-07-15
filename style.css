@@ -1,0 +1,227 @@
+html {
+  background: linear-gradient(#c4dfe6, #66a5ad);
+  box-sizing: border-box;
+}
+
+#FidelLopez {
+  display: flex;
+  justify-content: center;
+}
+
+#profilePic {
+  border-radius: 100%;
+  border: #005477 5px solid;
+  display: flex;
+  position: absolute;
+  top: 10px;
+  margin-top: 15px;
+}
+
+/* .sections includes Education & Projects sections */
+.sections-Education-Projects ul,
+ol {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+}
+
+body {
+  font-family: lato, Arial, sans-serif;
+  text-align: center;
+  line-height: 2rem;
+  margin: auto 0;
+  padding: 2rem 5rem;
+}
+
+section {
+  border-top: #005477 solid 2px;
+  margin: 2.5em 0 2.5em 0;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  text-shadow: 3px 3px 3px #66a5ad;
+  font-family: Original Surfer, cursive, Arial, sans-serif;
+  padding: 0.2em;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 2px #66a5ad;
+  padding: 0.2em;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-shadow: 1px 1px 1px #66a5ad;
+  padding: 0.2em;
+}
+
+p {
+  font-size: 1rem;
+}
+
+a {
+  text-decoration-line: none;
+  color: darkblue;
+  transition: background-color 0.5s, font-size 0.5s;
+}
+
+/* When links hover they: grow in size & change color */
+a:hover {
+  color: #005477;
+  font-size: 115%;
+}
+
+/* Nav a links in the first section */
+nav li {
+  position: relative;
+  padding-right: 3em;
+  align-self: right;
+  display: flex;
+  justify-content: start;
+  left: 90%;
+}
+
+/* Table starts */
+table {
+  font-size: 1rem;
+  margin-left: 31rem;
+  border: solid 5px black;
+}
+
+th {
+  border-bottom: 5px solid black;
+  width: 50%;
+}
+
+td {
+  border-width: 1px 2px 2px 3.5px;
+  border-color: black;
+  border-style: solid;
+  padding: 0.5rem;
+}
+
+li {
+  font-size: 1rem;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* FORM Starts */
+
+form {
+  font-size: 1rem;
+}
+
+form label {
+  position: absolute;
+  display: flex;
+  margin: 0.3rem;
+  outline-style: none;
+  left: 40%;
+}
+
+form input {
+  position: relative;
+  left: 5%;
+  outline-style: none;
+  border-style: solid;
+  border-color: #005477;
+  border-width: 2px;
+}
+
+form [type="radio"],
+form i {
+  position: relative;
+  left: 10%;
+}
+
+textarea {
+  position: relative;
+  outline-style: none;
+  border-style: solid;
+  border-color: #005477;
+  border-width: 2px;
+  left: 5%;
+}
+
+button {
+  background-color: #c4dfe6;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  padding-right: 0.5rem;
+  transition: background-color 0.5s linear;
+}
+
+/* Clear & Submit buttons change colors when hovered */
+button:hover {
+  background-color: #66a5ad;
+}
+
+/* start of CSS responsive */
+/* Width for phone screen (480px) */
+@media (max-width: 480px) {
+  #profilePic {
+    margin-left: 75px;
+    width: 33%;
+    height: 25%;
+  }
+  h1 {
+    margin-top: 170px;
+    font-size: 3rem;
+  }
+  nav li {
+    font-size: 90%;
+    left: 5%;
+    line-height: 40px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .sections ul ol,
+  li {
+    left: auto;
+    line-height: 40px;
+    text-align: center;
+    margin: 20px 35px 0 0;
+  }
+
+  table {
+    margin-left: 25px;
+  }
+
+  form label {
+    left: 25%;
+    font-size: 0.9rem;
+  }
+
+  form [type="radio"] {
+    margin-top: 55px;
+  }
+
+  form input,
+  form textarea {
+    font-size: 0.8rem;
+    left: 20%;
+  }
+
+  form textarea {
+    margin-top: 15px;
+  }
+
+  button {
+    font-size: 0.8rem;
+  }
+  footer {
+    margin: -1rem;
+  }
+}
